@@ -1,0 +1,10 @@
+header {
+    text-align: center;
+    color: #4c78a0;
+    font-size: 1.5rem;
+    margin: 0.5rem;
+}
+
+header > h1 {
+    margin: 0.5rem;
+}

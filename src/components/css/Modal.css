@@ -1,0 +1,137 @@
+.modal {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  overflow-y: auto;
+  margin: 1rem;
+  padding: 1rem;
+  min-width: 30%;
+  min-height: 30%;
+  max-width: 60%;
+  max-height: 60%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  background-color: #edf3f7;
+  border: 1px solid black;
+  border-radius: 1rem;
+  border-color: lightgray;
+  box-sizing: border-box;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+
+  z-index: 1000000;
+}
+
+.overlay-styles {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
+
+.modal * {
+  color: #324a61;
+}
+
+.modal span {
+  font-size: 0.8rem;
+  font-style: italic;
+}
+
+.modal h2 {
+  font-size: 2rem;
+  margin: 5px 0 5px 0;
+  overflow-wrap: break-word;
+}
+
+.modal p {
+  margin: 5px 0 5px 0;
+  overflow-wrap: break-word;
+}
+
+.modal > button:hover {
+  cursor: pointer;
+  background-color: #df74e8;
+  color: white;
+}
+
+.inner-modal {
+  display: flex;
+  flex-grow: 1;
+  align-items: flex-start;
+  height: 100%;
+  width: 100%;
+}
+
+.inner-modal form {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+
+.inner-modal input {
+  border: 1px solid #3d608d !important;
+  min-height: 10%;
+  min-width: 90%;
+  max-height: 2rem;
+  max-width: 90%;
+  margin: 10px;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 1rem;
+  background-color: #eef3f7;
+  color: #324a61;
+  font-size: 1rem;
+}
+
+.inner-modal .text-area {
+  border: 1px solid #3d608d !important;
+  min-height: 65%;
+  min-width: 90%;
+  max-width: 90%;
+  max-width: 500px;
+  margin: 0 0 0.5rem 0;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 1rem;
+  background-color: #eef3f7;
+  color: #324a61;
+  font-size: 1rem;
+}
+
+.inner-modal button {
+  align-self: center;
+}
+
+.inner-modal button {
+  height: 30%rem;
+  width: 15%;
+  padding: 0.5rem;
+  margin: 0.2rem 0 0.5rem 0;
+  border-radius: 0.5rem;
+  background-color: #3d608d;
+  color: #ebebeb;
+  border: none;
+  font-size: 1.2rem;
+  letter-spacing: 0.05rem;
+  align-self: center;
+}
+
+.inner-modal button:hover {
+  cursor: pointer;
+  background-color: #df74e8;
+  color: white;
+}

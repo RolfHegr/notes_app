@@ -1,0 +1,78 @@
+.note-entry {
+  box-sizing: border-box;
+  background-color: #eef3f7;
+  margin: 1rem;
+  padding: 0.5rem;
+  border: 1px solid black;
+  display: flex;
+  min-height: 150px;
+  min-width: 300px;
+  max-width: 30%;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  border-radius: 1rem;
+  border-color: lightgray;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.inner-note {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-grow: 1;
+  justify-content: space-between;
+}
+
+.inner-note div {
+  height: 100%;
+  width: 100%;
+  align-self: flex-start;
+  padding-bottom: 2rem;
+}
+
+.note-entry * {
+  color: #324a61;
+}
+
+.note-entry div {
+  height: 100%;
+}
+
+.note-entry div span {
+  font-size: 0.8rem;
+  font-style: italic;
+}
+
+.note-entry div h2 {
+  font-size: 2rem;
+  margin: 5px 0 5px 0;
+  overflow-wrap: break-word;
+}
+
+.note-entry div p {
+  margin: 5px 0 5px 0;
+  overflow-wrap: break-word;
+}
+
+.note-entry div button {
+  height: 2rem;
+  width: 7rem;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  background-color: #3d608d;
+  color: #ebebeb;
+  border: none;
+  font-size: 0.8rem;
+  letter-spacing: 0.05rem;
+  align-self: center;
+}
+
+.note-entry div button:hover {
+  cursor: pointer;
+  background-color: #df74e8;
+  color: white;
+}
